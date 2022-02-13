@@ -7,7 +7,8 @@ Things to Note
   - Example: If the QR Code ID is 11, 11 must be in the name in Filament Manager
     - **VALID**: QR: `11`, Spool Name: `011 - Black PLA`
     - **INVALID**: QR: `11`, Spool Name: `Black PLA`
-- A sheet of labels with IDs 1-30 is included. This is meant to be printed on Avery 5160 Address Labels and applied to the spool. 
+- A sheet of labels with IDs 1-30 is included (`label.png`). This is meant to be printed on Avery 5160 Address Labels and applied to each spool. 
+  - If you wish to make more labels, use the `label_maker.py` program. Change the `startID` to whatever ID you want. It will generate a new `label.png` image that you can then print.
 - If you do not want to use the included label maker, the format for the QR code text payload is `SPOOL - # - SPOOL`. 
   - Replace the `#` with whatever spool ID you have in the name in Filament Manager.
   - A number MUST be between the dashes in the payload of the QR code
